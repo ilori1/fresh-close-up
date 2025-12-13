@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloseUp Fresh Confidence</title>
+    <link rel="icon" href="favicon.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img class="logo" src="favicon.jpg" alt="CloseUp Logo">
+    </div>
+    <nav id="nav-menu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#products">Products</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#cta">Buy Now</a>
+    </nav>
+    <div class="header-right">
+        <div class="cart-icon" onclick="showCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Fresh Confidence Starts Here</h1>
+            <p>Experience the power of CloseUp toothpaste for unbeatable fresh breath and a confident smile.</p>
+            <a href="#cta" class="cta-button primary">Get Fresh Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>CloseUp has been the trusted choice for fresh breath and oral care for generations. Our advanced formula combines powerful whitening agents with long-lasting freshness to give you the confidence you deserve.</p>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2>Why Choose CloseUp?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Fresh Breath</h3>
+                    <p>Advanced formula fights bad breath for up to 12 hours.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Whiter Teeth</h3>
+                    <p>Gentle whitening agents remove stains for a brighter smile.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Cavity Protection</h3>
+                    <p>Fluoride protection strengthens enamel against cavities.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏰</div>
+                    <h3>Long-Lasting</h3>
+                    <p>All-day freshness that keeps you confident throughout the day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="/pimgs/Everfreshredhot.avif" alt="Fresh Confidence Gel" class="product-image">
+                    <h3>Ever Fresh Red Hot</h3>
+                    <p>₦4.99</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Fresh Confidence Gel', 4.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="pimgs/closeup herbal.avif" alt="Whitening Toothpaste" class="product-image">
+                    <h3>Close Up Herbal</h3>
+                    <p>₦5.49</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Whitening Toothpaste', 5.49)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="pimgs/closeupmouthwashnatureboost.avif" alt="Close-up of Sensitive Teeth Paste - Everfreshredhot.avif" class="product-image">
+                    <h3>Close Up Mouth Wash Nature Boost</h3>
+                    <p>₦4.79</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Sensitive Teeth Paste', 4.79)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="pimgs/CloseupMouthwashRedHot.avif" alt="Close-up of Kids Toothpaste - closeup herbal.avif" class="product-image">
+                    <h3>Close Up Mouth Red Hot</h3>
+                    <p>₦3.99</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Kids Toothpaste', 3.99)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="pimgs/erasetheyellow.avif" alt="Close-up of Herbal Toothpaste - closeup herbal.avif" class="product-image">
+                    <h3>Erase The Yellow</h3>
+                    <p>₦5.29</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Herbal Toothpaste', 5.29)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="pimgs/slaywithstains.avif" alt="Close-up of Charcoal Toothpaste" class="product-image">
+                    <h3>Slay With Stains</h3>
+                    <p>₦5.99</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Charcoal Toothpaste', 5.99)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"CloseUp has transformed my daily routine. My breath stays fresh all day long!"</p>
+                    <cite>- Sarah M.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"I love how my teeth look whiter after just a few uses. Highly recommend!"</p>
+                    <cite>- John D.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The gel formula is so smooth and refreshing. CloseUp is my go-to toothpaste."</p>
+                    <cite>- Emily R.</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Ready for Fresh Confidence?</h2>
+            <p>Join millions who trust CloseUp for their daily oral care. Get yours today!</p>
+            <a href="#" class="cta-button">Buy Now</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 CloseUp. All rights reserved.</p>
+</footer>
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <strong>Total: ₦<span id="cart-total">0.00</span></strong>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
